@@ -2980,7 +2980,7 @@ $RefreshReg$(_c, "MyFlixApplication");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-dom/client":"lOjBx","./index.scss":"lJZlQ","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"1IZtl","./components/main-view/main-view":"4gflv"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-dom/client":"lOjBx","./index.scss":"lJZlQ","./components/main-view/main-view":"4gflv","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"1IZtl"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27167,7 +27167,165 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"lJZlQ":[function() {},{}],"1IZtl":[function(require,module,exports) {
+},{}],"lJZlQ":[function() {},{}],"4gflv":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f7a6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f7a6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "MainView", ()=>MainView);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _bookCard = require("../book-card/book-card");
+var _bookView = require("../book-view/book-view");
+var _s = $RefreshSig$();
+const MainView = ()=>{
+    _s();
+    const [books, setBooks] = (0, _react.useState)([
+        {
+            id: 1,
+            title: "Eloquent JavaScript",
+            image: "https://images-na.ssl-images-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg",
+            author: "Marijn Haverbeke"
+        },
+        {
+            id: 2,
+            title: "Mastering JavaScript Functional Programming",
+            image: "https://images-na.ssl-images-amazon.com/images/I/51WAikRq37L._SX218_BO1,204,203,200_QL40_FMwebp_.jpg",
+            author: "Federico Kereki"
+        },
+        {
+            id: 3,
+            title: "JavaScript: The Good Parts",
+            image: "https://images-na.ssl-images-amazon.com/images/I/5131OWtQRaL._SX381_BO1,204,203,200_.jpg",
+            author: "Douglas Crockford"
+        },
+        {
+            id: 4,
+            title: "JavaScript: The Definitive Guide",
+            image: "https://images-na.ssl-images-amazon.com/images/I/51HbNW6RzhL._SX218_BO1,204,203,200_QL40_FMwebp_.jpg",
+            author: "David Flanagan"
+        },
+        {
+            id: 5,
+            title: "The Road to React",
+            image: "https://images-na.ssl-images-amazon.com/images/I/41MBLi5a4jL._SX384_BO1,204,203,200_.jpg",
+            author: "Robin Wieruch"
+        }
+    ]);
+    const [selectedBook, setSelectedBook] = (0, _react.useState)(null);
+    if (selectedBook) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookView.BookView), {
+        book: selectedBook,
+        onBackClick: ()=>setSelectedBook(null)
+    }, void 0, false, {
+        fileName: "src/components/main-view/main-view.jsx",
+        lineNumber: 40,
+        columnNumber: 13
+    }, undefined);
+    if (books.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: "No Books to display"
+    }, void 0, false, {
+        fileName: "src/components/main-view/main-view.jsx",
+        lineNumber: 44,
+        columnNumber: 16
+    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: books.map((book)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _bookCard.BookCard), {
+                book: book,
+                onBookClick: (newSelectedBook)=>{
+                    setSelectedBook(newSelectedBook);
+                }
+            }, book.id, false, {
+                fileName: "src/components/main-view/main-view.jsx",
+                lineNumber: 49,
+                columnNumber: 12
+            }, undefined))
+    }, void 0, false, {
+        fileName: "src/components/main-view/main-view.jsx",
+        lineNumber: 47,
+        columnNumber: 9
+    }, undefined);
+};
+_s(MainView, "JqVzetFvdkKgyhVEwrVarmDJzvY=");
+_c = MainView;
+var _c;
+$RefreshReg$(_c, "MainView");
+
+  $parcel$ReactRefreshHelpers$f7a6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../book-card/book-card":"8FC36","@parcel/transformer-js/src/esmodule-helpers.js":"lqh9w","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"1IZtl","../book-view/book-view":"6u6eS"}],"8FC36":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1994 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1994.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "BookCard", ()=>BookCard);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+const BookCard = ({ book, onBookClick })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        onClick: ()=>{
+            onBookClick(book);
+        },
+        children: book.title
+    }, void 0, false, {
+        fileName: "src/components/book-card/book-card.jsx",
+        lineNumber: 2,
+        columnNumber: 12
+    }, undefined);
+}; //above code is same as below
+ //export const BookCard = (props) => {
+ //  const { book } = props;
+ //  return <div>{book.title}</div>;
+ //}
+_c = BookCard;
+var _c;
+$RefreshReg$(_c, "BookCard");
+
+  $parcel$ReactRefreshHelpers$1994.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"lqh9w","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"1IZtl"}],"lqh9w":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"1IZtl":[function(require,module,exports) {
 "use strict";
 var Refresh = require("6e45bf8d71e31f49");
 function debounce(func, delay) {
@@ -27305,110 +27463,89 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"6e45bf8d71e31f49":"fTWAk"}],"4gflv":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$f7a6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"6e45bf8d71e31f49":"fTWAk"}],"6u6eS":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1e99 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$f7a6.prelude(module);
+$parcel$ReactRefreshHelpers$1e99.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "MainView", ()=>MainView);
+parcelHelpers.export(exports, "BookView", ()=>BookView);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _s = $RefreshSig$();
-const MainView = ()=>{
-    _s();
-    const [books, setBooks] = (0, _react.useState)([
-        {
-            id: 1,
-            title: "Eloquent JavaScript"
-        },
-        {
-            id: 2,
-            title: "Mastering JavaScript Functional Programming"
-        },
-        {
-            id: 3,
-            title: "JavaScript: The Good Parts"
-        },
-        {
-            id: 4,
-            title: "JavaScript: The Definitive Guide"
-        },
-        {
-            id: 5,
-            title: "The Road to React"
-        }
-    ]);
-    if (books.length == 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: "No Books to display"
-    }, void 0, false, {
-        fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 12,
-        columnNumber: 16
-    }, undefined);
+const BookView = ({ book, onBackClick })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: books.map((book)=>{
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                children: [
-                    book.id,
-                    ".",
-                    book.title
-                ]
-            }, book.id, true, {
-                fileName: "src/components/main-view/main-view.jsx",
-                lineNumber: 17,
-                columnNumber: 20
-            }, undefined);
-        })
-    }, void 0, false, {
-        fileName: "src/components/main-view/main-view.jsx",
-        lineNumber: 15,
-        columnNumber: 9
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: book.image
+                }, void 0, false, {
+                    fileName: "src/components/book-view/book-view.jsx",
+                    lineNumber: 5,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/book-view/book-view.jsx",
+                lineNumber: 4,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    children: [
+                        "Title: ",
+                        book.title
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/book-view/book-view.jsx",
+                    lineNumber: 8,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/book-view/book-view.jsx",
+                lineNumber: 7,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                    children: [
+                        "Author: ",
+                        book.author
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/book-view/book-view.jsx",
+                    lineNumber: 11,
+                    columnNumber: 13
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/book-view/book-view.jsx",
+                lineNumber: 10,
+                columnNumber: 9
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: onBackClick,
+                children: "Back"
+            }, void 0, false, {
+                fileName: "src/components/book-view/book-view.jsx",
+                lineNumber: 13,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/book-view/book-view.jsx",
+        lineNumber: 3,
+        columnNumber: 5
     }, undefined);
 };
-_s(MainView, "hwpFol6n1/85la+4qltBeqVCzXM=");
-_c = MainView;
+_c = BookView;
 var _c;
-$RefreshReg$(_c, "MainView");
+$RefreshReg$(_c, "BookView");
 
-  $parcel$ReactRefreshHelpers$f7a6.postlude(module);
+  $parcel$ReactRefreshHelpers$1e99.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"lqh9w","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"1IZtl"}],"lqh9w":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}]},["5taku","lk08y","d8Dch"], "d8Dch", "parcelRequire7b65")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"lqh9w","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"1IZtl"}]},["5taku","lk08y","d8Dch"], "d8Dch", "parcelRequire7b65")
 
 //# sourceMappingURL=index.b4b6dfad.js.map
