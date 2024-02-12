@@ -30,7 +30,7 @@ export const MainView = () => {
     }
     return(
         <div>
-          <center><h1>Books App</h1></center>
+          <center><h1>Book's App</h1></center>
           {books.map((book) => 
            <BookCard 
                 key={book.id} 
